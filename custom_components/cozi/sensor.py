@@ -80,7 +80,7 @@ class ListsSensor(CoziEntity, SensorEntity):
     def native_value(self):
         """Return the native value of the sensor."""
         if self.coordinator.data:
-            return ""
+            return None
         else:
             return self._attr_native_value
 
